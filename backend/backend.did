@@ -1,0 +1,8 @@
+type Result = 
+ variant {
+   err: text;
+   ok: float64;
+ };
+service : {
+  calculate: (float64, float64, text) -> (Result);
+}
